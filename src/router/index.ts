@@ -1,20 +1,63 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
+
+import store from '../store/index';
+
+import Home from "../components/Home.vue";
+import Register from "../components/TheRegister.vue";
+import Login from "../components/TheLogin.vue";
+import Dashboard from "../components/UserDashboad.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
+    path: "/home",
     name: "Home",
     component: Home,
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    path: "/",
+    redirect: "/home",
+    component: Home,
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: Register,
+    beforeEnter(to, from, next){
+      if(store.getters["users/isLogged"] === false){
+        next();
+      }else{
+        next("/");
+      }
+    }
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login,
+    beforeEnter(to, from, next){
+      if(store.getters["users/isLogged"] === false){
+        next();
+      }else{
+        next("/");
+      }
+    }
+  },
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    component: Dashboard,
+    beforeEnter(to, from, next){
+      if(store.getters["users/isLogged"]){
+        next();
+      }else{
+        next("/");
+      }
+    }
+  },
+  {
+    path: "/:notFound(.*)",
+    name: "notFound",
+    redirect: "/home"
   },
 ];
 
