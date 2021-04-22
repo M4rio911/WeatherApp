@@ -3,15 +3,15 @@ import {defineAsyncComponent} from "vue";
 
 import store from '../store/index';
 
-import Home from "../components/Home.vue";
-import Register from "../components/TheRegister.vue";
-import Login from "../components/TheLogin.vue";
-import Dashboard from "../components/UserDashboad.vue";
+// import Home from "../components/Home.vue";
+// import Register from "../components/TheRegister.vue";
+// import Login from "../components/TheLogin.vue";
+// import Dashboard from "../components/UserDashboad.vue";
 
-// const Home = defineAsyncComponent(() => import("../components/Home.vue"));
-// const Register = defineAsyncComponent(() => import("../components/TheRegister.vue"));
-// const Login = defineAsyncComponent(() => import("../components/TheLogin.vue"));
-// const Dashboard = defineAsyncComponent(() => import("../components/UserDashboad.vue"));
+const Home = defineAsyncComponent(() => import("../components/Home.vue"));
+const Register = defineAsyncComponent(() => import("../components/TheRegister.vue"));
+const Login = defineAsyncComponent(() => import("../components/TheLogin.vue"));
+const Dashboard = defineAsyncComponent(() => import("../components/UserDashboad.vue"));
 
 const routes: Array<RouteRecordRaw> = [
   {
