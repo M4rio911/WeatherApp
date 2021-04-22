@@ -1,12 +1,12 @@
 <template>
   <div class="border border-primary bg-light col-6 offset-3">
     <form @submit.prevent="">
-      <div class="mb-3 row">
+      <div class="mb-3 row"> 
         <p class="text-center display-4">Log in</p>
-        <label for="staticEmail" class="col-sm-2 col-form-label fs-3"
+        <label for="staticEmail" class="col-lg-2 col-form-label"
           >Email</label
         >
-        <div class="col-sm-10">
+        <div class="col-lg-10">
           <input
             type="text"
             class="form-control"
@@ -18,10 +18,10 @@
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label fs-3"
+        <label for="inputPassword" class="col-lg-2 col-form-label"
           >Password</label
         >
-        <div class="col-sm-10">
+        <div class="col-lg-10">
           <input
             type="password"
             class="form-control"

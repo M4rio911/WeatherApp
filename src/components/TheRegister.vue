@@ -2,9 +2,9 @@
   <div class="col-6 offset-3">
     <p class="text-center display-4">Register</p>
     <form @submit.prevent="">
-      <div class="mb-3 row">
-        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-10">
+      <div class="mb-lg-3 row">
+        <label for="staticEmail" class="col-lg-2 col-form-label">Email</label>
+        <div class="col-lg-10">
           <input
             type="text"
             class="form-control"
@@ -15,11 +15,11 @@
           />
         </div>
       </div>
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label"
+      <div class="mb-lg-3 row">
+        <label for="inputPassword" class="col-lg-2 col-form-label"
           >Password</label
         >
-        <div class="col-sm-10">
+        <div class="col-lg-10">
           <input
             type="password"
             class="form-control"
@@ -31,10 +31,10 @@
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="inputPassword2" class="col-sm-2 col-form-label"
+        <label for="inputPassword2" class="col-lg-2 col-form-label"
           >Repeat Password</label
         >
-        <div class="col-sm-10">
+        <div class="col-lg-10">
           <input
             type="password"
             class="form-control"
