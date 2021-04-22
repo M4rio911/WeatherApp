@@ -72,7 +72,7 @@ export default {
         if(this.warning === false){
           this.$emit("reset");
           this.$store.commit("users/IsAddedChange");
-          // this.$router.go("/dashboard");
+          this.$router.push("/home");
         }
       }
     },

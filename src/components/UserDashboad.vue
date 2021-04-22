@@ -68,7 +68,7 @@ export default {
         for (const city of this.get) {
           axios
             .get(
-              `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=93d71fee8b9fabde47f81589d838ab02`
+              `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=93d71fee8b9fabde47f81589d838ab02`
             )
             .then((response) => {
               this.weather_info = this.weather_info.filter(filtered_city => filtered_city.city !== city);

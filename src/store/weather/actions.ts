@@ -2,7 +2,7 @@ export default {
   async sendData({ dispatch, commit }: any, payload: any) {
     // if exist
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${payload.city}&units=metric&appid=93d71fee8b9fabde47f81589d838ab02`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${payload.city}&units=metric&appid=93d71fee8b9fabde47f81589d838ab02`,
       {
         method: "GET",
       }
