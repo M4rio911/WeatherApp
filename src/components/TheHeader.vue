@@ -26,7 +26,7 @@
               <router-link class="nav-link brand ms-4 fs-4" to="/home"
                 ><img
                   class="me-2 d-sm-inline-block d-lg-none d-xl-inline-block"
-                  src="../img/icons/UI/home.png"
+                  src="../img/UI/home.png"
                   alt=""
                 />
                 Home
@@ -39,7 +39,7 @@
                 to="/login"
                 ><img
                   class="me-2 d-sm-inline-block d-lg-none d-xl-inline-block"
-                  src="../img/icons/UI/login.png"
+                  src="../img/UI/login.png"
                   alt=""
                 />Login</router-link
               >
@@ -51,7 +51,7 @@
                 to="/register"
                 ><img
                   class="me-2 d-sm-inline-block d-lg-none d-xl-inline-block"
-                  src="../img/icons/UI/adduser.png"
+                  src="../img/UI/adduser.png"
                   alt=""
                 />Register</router-link
               >
@@ -63,7 +63,7 @@
                 to="/dashboard"
                 ><img
                   class="me-2 d-sm-inline-block d-lg-none d-xl-inline-block"
-                  src="../img/icons/UI/heart.png"
+                  src="../img/UI/heart.png"
                   alt=""
                 />Dashboard</router-link
               >
@@ -75,7 +75,7 @@
                 @click="logout()"
                 ><img
                   class="me-2 d-sm-inline-block d-lg-none d-xl-inline-block"
-                  src="../img/icons/UI/logout.png"
+                  src="../img/UI/logout.png"
                   alt=""
                 />Logout</span
               >

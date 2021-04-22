@@ -6,7 +6,7 @@
         <h5 class="card-title display-4">{{city}}</h5>
         <hr>
         <p class="card-text text-center fs-4">
-          {{weather}} <span><img class="ms-3" :src="require('../img/icons/weather/'+ weather.toLowerCase() +'.png')" alt="pic"></span>
+          {{weather}} <span><img class="ms-3" :src="require('../img/weather/'+ weather.toLowerCase() +'.png')" alt="pic"></span>
         </p>
       </div>
       <ul class="list-group list-group-flush">

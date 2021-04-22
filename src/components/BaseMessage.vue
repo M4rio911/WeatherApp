@@ -13,7 +13,7 @@
       class="card text-center col-8 offset-2 px-4 py-3 rounded-3 my-4"
     >
       <span @click="close()" class="text-end mb-2"
-        >Exit <img src="../img/icons/UI/delete.png" alt=""
+        >Exit <img src="../img/UI/delete.png" alt=""
       /></span>
       <h2 class="display-4">Add your Cities here</h2>
       <hr class="mt-3" />

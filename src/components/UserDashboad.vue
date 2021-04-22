@@ -6,7 +6,7 @@
       <div class="d-flex justify-content-center">
         <button class="btn btn-block btn-primary d-flex align-items-center p-4" @click="addingForm = true">
           <span class="display-4"> Add your favourite cities here</span>
-          <img class="mt-2 ms-3" src="../img/icons/UI/add.png" alt="" />
+          <img class="mt-2 ms-3" src="../img/UI/add.png" alt="" />
         </button>
       </div>
     </div>
